@@ -15,12 +15,12 @@ namespace Calculator
 			}
 		);
 
-		// find symbol(+, -, *, /) from operation inital
-		public static string findOpSymbol(string opInitalChar)
+		// find symbol(+, -, *, /) from operation initial
+		public static string findOpSymbol(string opInitialChar)
 		{
 			string sym = "";
 
-			switch (opInitalChar)
+			switch (opInitialChar)
 			{
 				case "a":
 					sym = "+";
@@ -35,7 +35,7 @@ namespace Calculator
 					sym = "/";
 					break;
 				default:
-					throw new Exception($"unknown operation: {opInitalChar}");
+					throw new Exception($"unknown operation: {opInitialChar}");
 			}
 
 			return sym;

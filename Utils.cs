@@ -3,7 +3,7 @@
 public class Utils
 {
 	// get first letter
-	public static string getInital(string str)
+	public static string getInitial(string str)
 	{
 		return str[0].ToString().ToLower();
 	}

@@ -38,13 +38,13 @@ namespace Calculator
 				
 				// display options
 				foreach (string optionName in Calculator.optionList)
-					Console.WriteLine($"\t{Utils.getInital(optionName)} - {optionName}");
+					Console.WriteLine($"\t{Utils.getInitial(optionName)} - {optionName}");
 
 				Console.Write($"What is your option?: ");
 
 				string op = Utils.getChar();
 
-				while (Calculator.optionList.Select(Utils.getInital).ToList().IndexOf(op) == -1)
+				while (Calculator.optionList.Select(Utils.getInitial).ToList().IndexOf(op) == -1)
 				{
 					Console.WriteLine($"unknown operation: '{op}'");
 					Console.Write("please input one of above options: ");
